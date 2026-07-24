@@ -1,0 +1,6 @@
+{
+  "name": "Tech Roots Laptop Dashboard",
+  "description": "لوحة تحكم احترافية وسهلة الاستخدام لإدارة مخزون ومبيعات ومسحوبات شركة Tech Roots للأجهزة المحمولة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

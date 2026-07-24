@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #020617; /* Slate 950 */
+  color: #e2e8f0; /* Slate 200 */
+  direction: rtl;
+}
+
+/* Custom scrollbar for premium dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #020617; /* Slate 950 */
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b; /* Slate 800 */
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155; /* Slate 700 */
+}
+
+/* Print styles for elegant PDF-like reports */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-card {
+    border: 1px solid #e5e7eb !important;
+    background: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+}
